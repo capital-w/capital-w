@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+    <meta name="description" content="Capital W - Empowering businesses with innovative digital solutions for sustainable growth and success.">
+    <meta name="keywords" content="Capital W, business solutions, web development, UI/UX design, digital marketing, SEO services, content creation">
+    <meta name="author" content="Capital W">
+
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap" as="style">
+      
+      <!-- {headerScripts} -->
+
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             colors: {
+                primary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      </script>
+
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+      
+   
+      <!-- Base Styles -->
+      <style>
+
+      * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Webkit browsers like Chrome, Safari, newer Edge */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+        }
+
+        /* Remove tap highlight on mobile */
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Improve text rendering */
+        body {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus outline styles */
+        :focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          
+          a[href]:after {
+            content: " (" attr(href) ")";
+          }
+        }
+      </style>
+
+   
+   
+    <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+        <div id="root">
+        <nav id="navbar" class="fixed top-0 left-0 w-full bg-blue-900/95 backdrop-blur-sm z-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                <a href="/" class="flex items-center">
+                    <img class="h-8 w-auto animate__animated animate__fadeIn transition-opacity duration-300 opacity-100" src="https://capitalw.in/assets/capw-CJuf_6rP.svg" alt="Capital Win Logo" loading="lazy">
+                </a>
+                </div>
+                
+                <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-4">
+                    <a href="#hero" class="text-gray-200 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                    <a href="#features" class="text-gray-200 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Features</a>
+                    <a href="#services" class="text-gray-200 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
+                    <a href="#tradingTools" class="text-gray-200 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Tools</a>
+                    <a href="#testimonials" class="text-gray-200 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Testimonials</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-500 transition-colors">Contact Us</a>
+                </div>
+                </div>
+
+                <div class="md:hidden">
+                <button type="button" id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-200 hover:text-white focus:outline-none">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                </div>
+            </div>
+            </div>
+
+            <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-blue-900">
+                <a href="#hero" class="text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#features" class="text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Features</a>
+                <a href="#services" class="text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="#tradingTools" class="text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Tools</a>
+                <a href="#testimonials" class="text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Testimonials</a>
+                <a href="#contact" class="bg-blue-600 text-white block px-4 py-2 rounded-md text-base font-medium hover:bg-blue-500 mt-4">Contact Us</a>
+            </div>
+            </div>
+        </nav>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
+                mobileMenu.classList.add('hidden');
+                }
+            });
+            });
+        </script>
+        </div>
+        <section id="termsHero" class="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white min-h-[70vh] flex items-center">
+    <div class="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 animate__animated animate__fadeIn">
+          Terms &amp; Conditions
+        </h1>
+        <p class="text-xl text-gray-300 mb-8 animate__animated animate__fadeIn animate__delay-1s">
+          Please read these terms and conditions carefully before using our services. By accessing or using our website, you agree to be bound by these terms.
+        </p>
+        <p class="text-sm text-gray-400 animate__animated animate__fadeIn animate__delay-2s">
+          Last updated: Jan 2025
+        </p>
+      </div>
+    </div>
+  </section>
+        <section id="termsOfService" class="py-16">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto prose prose-lg">
+            <h2 class="mb-4">Effective Date: 15-01-2025</h2>
+            <p>This Terms of Service Agreement (the "Agreement") governs your use of the capitalW.in website and services. By accessing or using our website and services, you agree to be bound by these terms.</p>
+
+            <h3 class="mb-4">User Conduct</h3>
+            <ul class="list-disc list-inside">
+                <li>Use our website or services for any illegal or unauthorized purpose.</li>
+                <li>Interfere with or disrupt our website or services.</li>
+                <li>Violate any applicable laws or regulations.</li>
+            </ul>
+
+            <h3 class="mb-4">Intellectual Property</h3>
+            <p>All intellectual property rights, including copyrights, trademarks, and patents, in our website and services are owned by capitalW.in or its licensors. You may not use our intellectual property without our prior written consent.</p>
+
+            <h3 class="mb-4">Disclaimer of Warranties</h3>
+            <p>Our website and services are provided "as is" without any warranties, express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
+
+            <h3 class="mb-4">Limitation of Liability</h3>
+            <p>In no event shall capitalW.in be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses, resulting from your access to or use of our website or services.</p>
+
+            <h3 class="mb-4">Governing Law</h3>
+            <p>This Agreement shall be governed by and construed in accordance with the laws of [Jurisdiction], without regard to its conflict of law principles.</p>
+
+            <h3 class="mb-4">Modifications to This Agreement</h3>
+            <p>We may modify this Agreement from time to time. We will notify you of any significant changes by posting a notice on our website or by sending you a notification.</p>
+
+            <h3 class="mb-4">Contact Us</h3>
+            <p>If you have any questions about this Terms of Service Agreement or our services, please contact us at:</p>
+            <p>capitalw.hq@gmail.com</p>
+            <p>Please note that this is a basic template and may need to be customized to fully comply with applicable laws and regulations. It is recommended to consult with a legal professional to ensure that your privacy policy and terms of service are comprehensive and legally sound.</p>
+        </div>
+    </div>
+</section>
+        
+        <div id="root">
+        <footer id="footer" class="bg-blue-900 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="animate__animated animate__fadeInUp">
+                <div class="mb-6">
+                    <img src="https://capitalw.in/assets/capw-CJuf_6rP.svg" alt="Capital Win Logo" class="h-12 w-auto filter brightness-0 invert transition-opacity duration-300 opacity-100" loading="lazy">
+                </div>
+                <p class="text-blue-200 mb-6">Empowering businesses with innovative digital solutions for sustainable growth and success.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-blue-200 hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+                    </a>
+                    <a href="#" class="text-blue-200 hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg>
+                    </a>
+                    <a href="#" class="text-blue-200 hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+                    </a>
+                </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="animate__animated animate__fadeInUp animate__delay-1s">
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-3">
+                    <li><a href="#hero" class="text-blue-200 hover:text-white transition-colors">Home</a></li>
+                    <li><a href="#features" class="text-blue-200 hover:text-white transition-colors">Features</a></li>
+                    <li><a href="#services" class="text-blue-200 hover:text-white transition-colors">Services</a></li>
+                    <li><a href="#testimonials" class="text-blue-200 hover:text-white transition-colors">Testimonials</a></li>
+                    <li><a href="#contact" class="text-blue-200 hover:text-white transition-colors">Contact</a></li>
+                </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="animate__animated animate__fadeInUp animate__delay-2s">
+                <h3 class="text-lg font-semibold mb-4">Services</h3>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-blue-200 hover:text-white transition-colors">Web Development</a></li>
+                    <li><a href="#" class="text-blue-200 hover:text-white transition-colors">UI/UX Design</a></li>
+                    <li><a href="#" class="text-blue-200 hover:text-white transition-colors">Digital Marketing</a></li>
+                    <li><a href="#" class="text-blue-200 hover:text-white transition-colors">SEO Services</a></li>
+                    <li><a href="#" class="text-blue-200 hover:text-white transition-colors">Content Creation</a></li>
+                </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="animate__animated animate__fadeInUp animate__delay-3s">
+                <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                    </svg>
+                    <span class="text-blue-200">capitalw.hq@gmail.com</span>
+                    </li>
+                    
+                    <li class="flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="text-blue-200">chennai</span>
+                    </li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-blue-800">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-blue-200 text-sm">© 2024 Capital Win. All rights reserved.</p>
+                <div class="mt-4 md:mt-0">
+                    <ul class="flex space-x-6">
+                    <li><a href="./privacy.html" class="text-blue-200 hover:text-white text-sm transition-colors">Privacy Policy</a></li>
+                    <li><a href="./terms.html" class="text-blue-200 hover:text-white text-sm transition-colors">Terms of Service</a></li>
+                    
+                    </ul>
+                </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+        </div>
+    </body>
+</html>
